@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BE34C"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ground"
+        android:backgroundTint="@color/oval_frog"
+        android:gravity="center"
+        android:textColor="@color/pup_text"
+        android:textSize="@dimen/text_size50" />
+
+    <TextView
+        android:layout_width="@dimen/text_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/frog"
+        android:textColor="@color/color_text_f"
+        android:textSize="@dimen/text_size20"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pup2_text"
+        android:onClick="onClickBtnAddfrogs"
+        android:text="@string/dob_frog"
+        android:textColor="@color/color_bel" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="219dp"
+        android:layout_height="154dp"
+        app:srcCompat="@drawable/_077e22c_0eb8_4766_a211_9e10b09b2105" />
+
+</LinearLayout>

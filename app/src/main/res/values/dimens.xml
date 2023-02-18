@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_height">150dp</dimen>
+    <dimen name="text_width">150dp</dimen>
+    <dimen name="text_size50">50sp</dimen>
+    <dimen name="text_stroke">10dp</dimen>
+    <dimen name="text_size20">20dp</dimen>
+</resources>
