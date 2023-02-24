@@ -6,16 +6,17 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "StartActivity";
     private Integer count = 0;
-    private Integer counter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this, "onCreate()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onCreate");
     }
     @Override
@@ -58,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "resetUI");
     }
     public void onClickBtnAddfrogs(View view){
-        counter++;
+        count++;
         TextView counterView = findViewById(R.id.txt_counter);
-        counterView.setText(counter.toString());
+        counterView.setText(count.toString());
     }
 }
